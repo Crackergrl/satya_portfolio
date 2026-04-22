@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Satya Upadhyay | Cloud &amp; DevOps Engineer</title>
+    <link rel="shortcut icon" href="./assets/images/logo/Jv_logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <div class="cursor-dot"></div>
+
+    <div id="content-wrapper" class="visible">
+
+        <header>
+            <nav id="navbar">
+                <div class="nav-container">
+                    <div class="nav-left">
+                        <a href="index.html">
+                            <img src="./assets/images/logo/Jv_logo.jpg" alt="Satya Upadhyay" class="logo">
+                        </a>
+                    </div>
+                    <div class="nav-right">
+                        <div class="hamburger-menu">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <ul>
+                            <li><a onclick="goToSection('about', false)">About</a></li>
+                            <li><a onclick="goToSection('skills', false)">Skills</a></li>
+                            <li><a onclick="goToSection('experience', false)">Work</a></li>
+                            <li><a onclick="goToSection('portfolio', false)">Projects</a></li>
+                            <li><a onclick="goToSection('contact', false)">Contact</a></li>
+                            <li><a href="./assets/Satya_Upadhyay_Resume.pdf" download="Satya_Upadhyay_CV.pdf">Download CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-overlay"></div>
+        </header>
+
+        <div class="line"></div>
+
+        <!-- INTRO -->
+        <section id="intro">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h1>Satya Upadhyay</h1>
+                    <div class="typing-container">
+                        <span class="static-text">I'm a </span>
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="intro-description">Building resilient cloud infrastructure and automating DevOps pipelines with 2.5+ years of hands-on experience in Azure, AWS, Linux, and CI/CD.</p>
+                    <div class="intro-highlights">
+                        <div class="highlight-item">
+                            <i class="bi bi-cloud"></i>
+                            <span>Azure &amp; AWS Cloud</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="bi bi-hdd-stack"></i>
+                            <span>Linux Production Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="bi bi-gear"></i>
+                            <span>CI/CD &amp; Automation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>ELK, Grafana &amp; Observability</span>
+                        </div>
+                    </div>
+                    <div class="intro-cta">
+                        <a href="#contact" class="btn-contact" onclick="goToSection('contact', true)">Get In Touch</a>
+                        <a href="#portfolio" class="btn-portfolio-link" onclick="goToSection('portfolio', true)">View My Work</a>
+                    </div>
+                    <h4><i class="bi bi-geo-alt-fill"></i> Gandhinagar, Gujarat, India</h4>
+                </div>
+                <div class="intro-photo">
+                    <div class="photo-container">
+                        <div class="profile-image-wrapper">
+                            <img src="./assets/images/my_photo.jpeg" alt="Satya Upadhyay" class="profile-image">
+                            <div class="image-border"></div>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="tech-icon" style="--delay: 0s; --top: 10%; --left: 0%;"><i class="bi bi-cloud-fill"></i></div>
+                            <div class="tech-icon" style="--delay: 1s; --top: 70%; --left: 5%;"><i class="bi bi-terminal-fill"></i></div>
+                            <div class="tech-icon" style="--delay: 2s; --top: 20%; --left: 85%;"><i class="bi bi-gear-fill"></i></div>
+                            <div class="tech-icon" style="--delay: 3s; --top: 80%; --left: 80%;"><i class="bi bi-bar-chart-fill"></i></div>
+                            <div class="tech-icon" style="--delay: 4s; --top: 40%; --left: 90%;"><i class="bi bi-shield-check"></i></div>
+                        </div>
+                        <div class="background-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">2.5</span>
+                            <span class="text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About me</h2>
+            <p>Hi, I'm Satya Upadhyay, a results-driven Cloud &amp; DevOps Engineer with 2.5+ years of hands-on experience at Tata Consultancy Services. I specialize in managing Linux-based production environments, cloud infrastructure on Azure and AWS, CI/CD automation, and distributed systems observability. I've consistently delivered measurable impact — reducing MTTR by 30%, improving issue detection by 40%, and cutting manual effort by 35% through intelligent automation.</p>
+            <p>I'm passionate about building resilient, scalable platforms that bridge infrastructure and development teams. From configuring NGINX load balancers and designing ELK Stack dashboards to automating operational workflows with Shell scripting and collaborating on CI/CD pipelines, I thrive in complex, high-availability environments.</p>
+            <div class="skills-highlight">
+                <h3>I bring to the table:</h3>
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-cloud-check"></i></div>
+                        <h4>Cloud Infrastructure</h4>
+                        <p>Hands-on expertise with Microsoft Azure and AWS — managing compute, storage, networking, and security for production-grade environments.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-terminal"></i></div>
+                        <h4>Linux &amp; Systems</h4>
+                        <p>Deep experience with RHEL and Ubuntu — performance tuning, process management, disk I/O, and advanced troubleshooting under pressure.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-arrow-repeat"></i></div>
+                        <h4>CI/CD &amp; Automation</h4>
+                        <p>Building and maintaining pipelines with Jenkins and Azure DevOps, and automating operational tasks with Bash/Shell scripting.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-graph-up"></i></div>
+                        <h4>Observability</h4>
+                        <p>Designing dashboards and alerting using Azure Monitor, ELK Stack, Grafana, and Prometheus for proactive incident response.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-hdd-network"></i></div>
+                        <h4>Networking</h4>
+                        <p>Proficient in TCP/IP, DNS, HTTP/S, firewalls, load balancing, and NGINX reverse proxy for secure HA architectures.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-people"></i></div>
+                        <h4>Incident Management</h4>
+                        <p>Conducting Root Cause Analysis, implementing permanent fixes, and building runbooks to reduce recurring incidents.</p>
+                    </div>
+                </div>
+            </div>
+            <p>Let's build something reliable and scalable together!</p>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <p>The tools, platforms, and technologies I work with:</p>
+            <ul class="skills-list">
+                <li><img src="./assets/images/dev_icons/azure-original.svg" alt="Microsoft Azure"></li>
+                <li><img src="./assets/images/dev_iconss/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch"></li>
+                <li><img src="./assets/images/dev_iconss/kibana/kibana-original.svg" alt="Kibana"></li>
+                <li><img src="./assets/images/dev_iconss/grafana/grafana-original.svg" alt="Grafana"></li>
+                <li><img src="./assets/images/dev_iconss/docker/docker-original.svg" alt="Docker"></li>
+                <li><img src="./assets/images/dev_iconss/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></li>
+                <li><img src="./assets/images/dev_iconss/jenkins/jenkins-original.svg" alt="Jenkins"></li>
+                <li><img src="./assets/images/dev_iconss/git/git-original.svg" alt="Git"></li>
+                <li><img src="./assets/images/dev_icons/linux-plain.svg" alt="Linux"></li>
+                <li><img src="./assets/images/dev_icons/python-original.svg" alt="Python"></li>
+                <li><img src="./assets/images/dev_iconss/jira/jira-original.svg" alt="Jira"></li>
+                <li><img src="./assets/images/dev_iconss/nginx/nginx-original.svg" alt="NGINX"></li>
+            </ul>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>System Engineer</h3>
+                <p class="company-name">
+                    <img src="./assets/images/company_logos/tcs.jpg" alt="TCS Logo" class="company-logo" style="width: 40px; height: 40px;">
+                    Tata Consultancy Services
+                </p>
+                <p class="job-duration">Jan 2024 – Present | Gandhinagar, Gujarat, India</p>
+                <ul class="job-responsibilities">
+                    <li>Managed and optimized Linux-based cloud infrastructure (Azure &amp; AWS), maintaining 99.9% uptime across production systems.</li>
+                    <li>Built and maintained observability pipelines using Azure Monitor, Log Analytics, and ELK Stack, improving issue detection speed by 40%.</li>
+                    <li>Diagnosed and resolved complex incidents across compute, storage, and network layers, reducing MTTR by 30% and recurring incidents by 20%.</li>
+                    <li>Developed Shell scripts to automate health checks, log rotation, and system maintenance workflows, reducing manual effort by 35%.</li>
+                    <li>Configured DNS resolution, firewall rules, and NGINX reverse proxy for secure, high-availability application delivery.</li>
+                    <li>Collaborated with DevOps teams on CI/CD pipelines (Jenkins, Azure DevOps) and deployment automation for cloud-native workloads.</li>
+                    <li>Conducted Root Cause Analysis (RCA) and implemented permanent fixes; documented runbooks and playbooks to improve team response.</li>
+                    <li>Supported high-availability environment design and enforced proactive monitoring strategies across distributed services.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Associate System Engineer</h3>
+                <p class="company-name">
+                    <img src="./assets/images/company_logos/tcs.jpg" alt="TCS Logo" class="company-logo" style="width: 40px; height: 40px;">
+                    Tata Consultancy Services
+                </p>
+                <p class="job-duration">Nov 2023 – Dec 2023 · 2 mos | Gandhinagar, Gujarat, India</p>
+                <ul class="job-responsibilities">
+                    <li>Monitored system logs and cloud performance metrics; assisted in incident resolution and change management processes.</li>
+                    <li>Reduced escalation dependency by 15% through proactive triage and documented troubleshooting workflows.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio">
+            <h2>Projects</h2>
+            <div class="portfolio-intro">
+                <p>Key infrastructure and DevOps projects from my professional work.</p>
+            </div>
+
+            <div class="portfolio-counter">
+                <div class="counter-item">
+                    <span class="counter-number" data-count="2">0</span>
+                    <span class="counter-label">Key Projects</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" data-count="99">0</span>
+                    <span class="counter-label">% Uptime Achieved</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" data-count="2">0</span>
+                    <span class="counter-label">Years Experience</span>
+                </div>
+            </div>
+
+            <div class="featured-project-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slider-item">
+                            <div class="featured-project">
+                                <div class="featured-project-image">
+                                    <img src="./assets/images/portfolio/project1.png" alt="Observability & Monitoring Platform">
+                                    <div class="featured-project-overlay">
+                                        <div class="tech-stack">
+                                            <span>Azure Monitor</span><span>Grafana</span><span>ELK Stack</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-project-content">
+                                    <h3>Observability &amp; Monitoring Platform</h3>
+                                    <p>Architected centralized dashboards and alerting rules for multi-tier application stacks, reducing unplanned downtime by 20%.</p>
+                                    <div class="featured-project-cta">
+                                        <a href="portfolio.html#project1" class="btn-view-project">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="featured-project">
+                                <div class="featured-project-image">
+                                    <img src="./assets/images/portfolio/project2.png" alt="Linux Load Balancer NGINX">
+                                    <div class="featured-project-overlay">
+                                        <div class="tech-stack">
+                                            <span>NGINX</span><span>Linux</span><span>HA Architecture</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-project-content">
+                                    <h3>Linux-Based Load Balancer (NGINX)</h3>
+                                    <p>Configured NGINX as a Layer 7 reverse proxy and load balancer enabling rolling deployments and eliminating single points of failure.</p>
+                                    <div class="featured-project-cta">
+                                        <a href="portfolio.html#project2" class="btn-view-project">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev"><i class="bi bi-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-arrow next"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="btn-portfolio">
+                    <i class="bi bi-collection"></i>
+                    <span>View All Projects</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education &amp; Certifications</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <div class="education-content">
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <div class="education-meta">
+                            <span class="education-institution"><i class="bi bi-building"></i> The Maharaja Sayajirao University, Gujarat</span>
+                            <span class="education-period"><i class="bi bi-calendar3"></i> 2021 – 2023</span>
+                            <span class="education-location"><i class="bi bi-geo-alt"></i> Vadodara, Gujarat, India</span>
+                        </div>
+                        <div class="education-details">
+                            <p>Master's in Computer Applications with focus on system design, networking, cloud computing, and software engineering — forming the academic backbone of my cloud and DevOps career at TCS.</p>
+                            <div class="education-highlights">
+                                <span class="highlight-tag">Cloud Computing</span>
+                                <span class="highlight-tag">Networking</span>
+                                <span class="highlight-tag">Linux Systems</span>
+                                <span class="highlight-tag">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <div class="education-content">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <div class="education-meta">
+                            <span class="education-institution"><i class="bi bi-building"></i> Amazon Web Services</span>
+                            <span class="education-period"><i class="bi bi-calendar3"></i> 2026</span>
+                        </div>
+                        <div class="education-details">
+                            <p>Validated foundational AWS cloud knowledge including core services, security, architecture, pricing, and support — complementing hands-on Azure and AWS production experience.</p>
+                            <div class="education-highlights">
+                                <span class="highlight-tag">AWS EC2 &amp; S3</span>
+                                <span class="highlight-tag">IAM &amp; VPC</span>
+                                <span class="highlight-tag">CloudWatch</span>
+                                <span class="highlight-tag">Cloud Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="separator"><img src="./assets/images/separator.svg" alt=""></section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Get in touch</h2>
+            <div class="contact-intro">
+                <p>I'm open to new Cloud &amp; DevOps opportunities. Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-card contact-info">
+                    <div class="contact-card-header">
+                        <i class="bi bi-envelope-paper-heart"></i>
+                        <h3>Contact Information</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="contact-detail"><i class="bi bi-envelope"></i><span>upadhyay3005satya@gmail.com</span></div>
+                        <div class="contact-detail"><i class="bi bi-telephone"></i><span>+91-9327404736</span></div>
+                        <div class="contact-detail"><i class="bi bi-geo-alt"></i><span>Gandhinagar, Gujarat, India</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-card contact-links">
+                    <div class="contact-card-header">
+                        <i class="bi bi-globe"></i>
+                        <h3>Find Me Online</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="social-links">
+                            <a href="https://linkedin.com" class="social-link linkedin"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+                            <a href="mailto:upadhyay3005satya@gmail.com" class="social-link email"><i class="bi bi-envelope"></i><span>Email</span></a>
+                            <a href="./assets/Satya_Upadhyay_Resume.pdf" download="Satya_Upadhyay_CV.pdf" class="social-link resume"><i class="bi bi-file-earmark-person"></i><span>Download CV</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <a href="mailto:upadhyay3005satya@gmail.com" class="btn-contact"><i class="bi bi-send"></i> Send Message</a>
+            </div>
+
+            <hr id="separator">
+            <p id="copyright">© 2025 | Designed and Coded with <br><i class="bi bi-heart-fill pulse"></i><br>Satya Upadhyay</p>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

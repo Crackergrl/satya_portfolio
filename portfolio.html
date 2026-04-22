@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Upadhyay | Projects</title>
+    <link rel="shortcut icon" href="./assets/images/logo/Jv_logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="hero-background">
+                <div class="hero-grid">
+                    <div class="dot-grid"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">My <span class="highlight">Projects</span></h1>
+                    <p class="subtitle">Hands-on infrastructure and DevOps work that drives real reliability</p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2.5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#project1" class="btn-primary">View Projects</a>
+                        <a href="index.html#contact" class="btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Filters -->
+        <section class="project-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="devops">DevOps</button>
+                    <button class="filter-btn" data-filter="monitoring">Monitoring</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+            <div class="container">
+                <div class="projects-wrapper">
+
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="cloud monitoring" id="project1">
+                        <div class="project-image">
+                            <img src="./assets/images/portfolio/project1.png" alt="Observability & Monitoring Platform">
+                        </div>
+                        <div class="project-info">
+                            <h3>Observability &amp; Monitoring Platform</h3>
+                            <div class="project-tech">
+                                <span>Azure Monitor</span>
+                                <span>Grafana</span>
+                                <span>ELK Stack</span>
+                                <span>Logstash</span>
+                            </div>
+                            <p>Centralized dashboards and alerting system for multi-tier application stacks — reduced unplanned downtime by 20% through proactive anomaly detection.</p>
+                            <div class="project-links">
+                                <a href="#project1-modal" class="btn-details">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="devops cloud" id="project2">
+                        <div class="project-image">
+                            <img src="./assets/images/portfolio/project2.png" alt="Linux Load Balancer NGINX">
+                        </div>
+                        <div class="project-info">
+                            <h3>Linux-Based Load Balancer (NGINX)</h3>
+                            <div class="project-tech">
+                                <span>NGINX</span>
+                                <span>Linux</span>
+                                <span>Reverse Proxy</span>
+                                <span>HA Architecture</span>
+                            </div>
+                            <p>Configured NGINX as a Layer 7 reverse proxy and load balancer for a microservices application, enabling rolling deployments and eliminating single points of failure.</p>
+                            <div class="project-links">
+                                <a href="#project2-modal" class="btn-details">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 1 Modal -->
+        <div id="project1-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Observability &amp; Monitoring Platform</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-gallery">
+                        <img src="./assets/images/portfolio/project1.png" alt="Observability & Monitoring Platform">
+                    </div>
+                    <div class="project-details">
+                        <div class="details-section">
+                            <h3>Project Overview</h3>
+                            <p>Designed and implemented a centralized observability platform for multi-tier production systems at TCS. The platform consolidates metrics, logs, and alerts from across the infrastructure into a unified view, enabling faster incident detection and response. By integrating Azure Monitor, Grafana dashboards, and the ELK Stack (Elasticsearch, Logstash, Kibana), the system significantly improved the team's ability to detect anomalies before they impacted end users — reducing unplanned downtime by 20%.</p>
+                        </div>
+                        <div class="details-section">
+                            <h3>Technologies Used</h3>
+                            <div class="tech-tags">
+                                <span>Azure Monitor</span>
+                                <span>Log Analytics</span>
+                                <span>Elasticsearch</span>
+                                <span>Logstash</span>
+                                <span>Kibana</span>
+                                <span>Grafana</span>
+                                <span>Prometheus</span>
+                            </div>
+                        </div>
+                        <div class="details-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Centralized dashboards in Grafana and Kibana for real-time system visibility across all production environments</li>
+                                <li>Threshold-based alerting rules in Azure Monitor to trigger notifications before SLA breaches</li>
+                                <li>Log aggregation pipeline using Logstash feeding into Azure Log Analytics for unified log querying</li>
+                                <li>Proactive anomaly detection that reduced unplanned downtime by 20%</li>
+                                <li>Issue detection speed improved by 40% compared to manual monitoring approaches</li>
+                                <li>Custom alert suppression logic to reduce alert fatigue during planned maintenance windows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 Modal -->
+        <div id="project2-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Linux-Based Load Balancer (NGINX)</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-gallery">
+                        <img src="./assets/images/portfolio/project2.png" alt="Linux Load Balancer NGINX">
+                    </div>
+                    <div class="project-details">
+                        <div class="details-section">
+                            <h3>Project Overview</h3>
+                            <p>Designed and configured an NGINX-based Layer 7 reverse proxy and load balancer for a microservices application running on Linux. The setup replaced a manual traffic management approach and enabled automated rolling deployments, active health checks, and weighted round-robin distribution across backend nodes. The result was a significant improvement in application availability, reliability, and fault tolerance — eliminating single points of failure across the service tier.</p>
+                        </div>
+                        <div class="details-section">
+                            <h3>Technologies Used</h3>
+                            <div class="tech-tags">
+                                <span>NGINX</span>
+                                <span>Linux (RHEL/Ubuntu)</span>
+                                <span>Bash Scripting</span>
+                                <span>DNS Configuration</span>
+                                <span>Firewall Rules</span>
+                            </div>
+                        </div>
+                        <div class="details-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>NGINX configured as a Layer 7 reverse proxy with SSL termination for secure inbound traffic</li>
+                                <li>Weighted round-robin load balancing distributing traffic across multiple backend instances</li>
+                                <li>Active health checks automatically removing unhealthy nodes from the rotation</li>
+                                <li>Rolling deployment support — new instances added to the pool without downtime</li>
+                                <li>Firewall rules and DNS resolution configured for controlled, secure communication</li>
+                                <li>Eliminated single points of failure, improving overall application availability and reliability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <section class="portfolio-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Interested in working together?</h2>
+                    <p>I'm open to Cloud &amp; DevOps opportunities and collaborations.</p>
+                    <a href="index.html#contact" class="btn-contact">Get in Touch</a>
+                </div>
+                <div class="cta-background">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo/Jv_logo.jpg" alt="Satya Upadhyay" class="logo">
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="mailto:upadhyay3005satya@gmail.com"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 | Designed and Coded with ❤ by Satya Upadhyay</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+    <script src="./portfolio-script.js"></script>
+</body>
+</html>
